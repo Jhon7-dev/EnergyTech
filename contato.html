@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contato</title>
+     <link rel="stylesheet" href="assets/css/styleContato.css">
+</head>
+
+<body>
+     <header>
+          <!-- <img class="logo" src="imagens/logos/logo-3.svg" alt="logo"> -->
+          <h1 class="titulo-logo">EnergyTech</h1>
+          <nav>
+               <a href="/index.html" class="links">início</a>
+               <a href="/" class="links">Sobre nós</a>
+               <a href="/" class="links">Objetivos</a>
+               <a href="/" class="links">Contato</a>
+          </nav>
+     </header>
+
+
+     <main>
+          <div class="container">
+               <div class="banner-1">
+                    <h1 class="titulo-banner-1">FALE COM A NOSSA <strong>EQUIPE!</strong></h1>
+                    <p class="descricao-banner-1">Energia solar é com a EnergyTech. Entre em contato com nosso time e
+                         venha usufruir dos benefícios da matriz fotovoltaica!</p>
+               </div>
+               <div class="principal">
+                    <form action="./">
+
+                         <div class="linha">
+                              <label for="nome"> </label> <!-- label é elemento inline -->
+                              <input type="text" id="nome" name="nomes" placeholder="Seu nome*"
+                                   required><!-- input é inline block -->
+                         </div>
+                         <div class="linha">
+                              <label for="cpf"> </label>
+                              <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                         </div>
+
+                         <label for="email"> </label>
+                         <input type="email" name="email" placeholder="E-mail" id="email" required>
+
+
+                         <label for="idade"> </label>
+                         <input type="number" name="idade" id="idade" placeholder="Idade" required>
+
+                         <!-- <label for="saida">Saída</label> -->
+                         <!-- <input type="date" name="saida" id="saida" required> -->
+                         <label for="estado"></label>
+                         <select name="estado" id="gaduacao">
+                              <option value="" disabled selected>Seu Estado*</option>
+                              <option value="AC">AC </option>
+                              <option value="AL">AL</option>
+                              <option value="AP">AP</option>
+                              <option value="AM">AM</option>
+                              <option value="BA">BA</option>
+                              <option value="CE">CE</option>
+                              <option value="DF">DF</option>
+                              <option value="ES">ES</option>
+                              <option value="GO">GO</option>
+                              <option value="MA">MA</option>
+                              <option value="MT">MT</option>
+                              <option value="MS">MS</option>
+                              <option value="MG">MG</option>
+                              <option value="PA">PA</option>
+                              <option value="PB">PB</option>
+                              <option value="PR">PR</option>
+                              <option value="PE">PE</option>
+                              <option value="PI">PI</option>
+                              <option value="RJ">RJ</option>
+                              <option value="RN">RN</option>
+                              <option value="RS">RS</option>
+                              <option value="RO">RO</option>
+                              <option value="RR">RR</option>
+                              <option value="SC">SC</option>
+                              <option value="SP">SP</option>
+                              <option value="SE">SE</option>
+                              <option value="TO">TO</option>
+                         </select>
+
+
+                         <select name="setor" id="setor">
+                              <option value="" desabled selected>Qual setor deseja falar?*</option>
+                              <option value="Comercial">Comercial</option>
+                              <option value="administrativo">Administração</option>
+                              <option value="engenharia">Engenharia</option>
+                              <option value="Marketing">Marketing</option>
+                         </select>
+
+                         <label for="assuntoContato"></label>
+                         <select name="assuntoContato" id="assuntoContato">
+                              <option value="" desabled selected>Qual o assunto de seu contato?</option>
+                              <option value="orcamento">Orçamento</option>
+                              <option value="duvida">Dúvida</option>
+                              <option value="parceria">Parceria</option>
+                              <option value="sugestao ">Sugestão</option>
+
+                         </select>
+
+                         <label for="mensagem">Mensagem</label>
+                         <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+                         <div class="checkbox">
+                              <input type="checkbox" id="termos" name="termos" value="aceito">
+                              <label for="termos">Aceito os termos de condições da empresa.</label>
+                         </div>
+
+                         <button type="submit">ENVIAR</button>
+
+                    </form>
+               </div>
+          </div>
+          </div>
+     </main>
+</body>
+
+</html>
